@@ -1,12 +1,16 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>PianoDude Virtual Piano Studios | <%= @title %></title>
-  <%= csrf_meta_tag %>
-</head>
-<body>
+	<head>
+	
+		  <title><%= @title %></title>
+		  <%= csrf_meta_tag %>
+		  <%= stylesheet_link_tag 'blueprint/screen', :media => 'screen' %>
+		  <%= stylesheet_link_tag 'blueprint/print', :mediate => 'print' %>
+		  
+	</head>
+	<body>
 
-<%= yield %>
+		<%= yield %>
 
-</body>
+	</body>
 </html>
