@@ -1,3 +1,24 @@
+<style type="text/css">
+
+body {
+	margin:0;
+	padding:0;
+}
+
+label.shown {
+	font-size:16;
+	font-weight:bold;
+	color:red
+}
+
+label.hidden {
+	font-size:16;
+	font-weight:bold;
+	color:black
+}
+
+</style>
+
 <table class="profile" summary="Profile information">
 	<tr>
 		<td class="main">
@@ -10,5 +31,12 @@
 			<strong>Name</strong> <%= @user.name %></br>
 			<strong>URL</strong> <%= link_to user_path(@user), @user %>
 		</td>
+	</tr>
+	<tr>
+		<%= javascript_include_tag "keyloader" %>
+		<%= javascript_include_tag "jin" %>
+		<%= javascript_include_tag "jin-gestures" %>
+		<%= javascript_include_tag "jin-ui" %>
+		<%= javascript_include_tag "midikb" %>
 	</tr>
 </table>
