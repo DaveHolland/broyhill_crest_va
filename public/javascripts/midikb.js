@@ -426,7 +426,7 @@ function initJava(){
 	var appletObject = create('applet', {
 		name:		'midiApplet',
 		code:		'net.abumarkub.midi.applet.MidiApplet',
-		archive:	'jar/midiapplet.jar',
+		archive:	'/jar/midiapplet.jar',
 		width:		'1',
 		height:		'1',
 		MAYSCRIPT:	''
