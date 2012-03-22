@@ -1,5 +1,7 @@
 class UsersController < ApplicationController
   
+  before_filter :authenticate
+  
   def show
 	@user = User.find(params[:id])
   end
@@ -19,6 +21,10 @@ class UsersController < ApplicationController
 		@title = "Sign up"
 		render 'new'
 	end
+  end
+  
+  def authenticate
+	deny_access unless signed_in?
   end
   
 end
