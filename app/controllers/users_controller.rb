@@ -1,6 +1,6 @@
 class UsersController < ApplicationController
   
-  before_filter :authenticate
+  before_filter :authenticate, :only => [:edit, :update]
   
   def show
 	@user = User.find(params[:id])
