@@ -1,5 +1,5 @@
 .container {
-	width: 710px;
+	width: 100%; /* Changed 4.20.12 */
 }
 
 body {
@@ -12,14 +12,15 @@ header {
 
 header img {
 	padding: lem;
-	background: #fff;
+	background: #00ff00;
 }
 
 section {
 	margin-top: lem;
 	font-size: 120%;
 	padding: 20px;
-	background: #fff;
+	background: #bbffbb;
+	height: 100%;
 }
 
 section h1 {
@@ -45,10 +46,6 @@ a:visited {
 /* Navigation */
 
 nav {
-	float: right;
-}
-
-nav {
 	background-color: white;
 	padding: 0 0.7em;
 	white-space: nowrap;
@@ -61,7 +58,7 @@ nav ul {
 
 nav ul li {
 	list-style-type: none;
-	display: inline-block;
+	display: block;
 	padding: 0.2em 0;
 }
 
@@ -107,7 +104,7 @@ footer
 {
 text-align: center;
 margin-top: 10px;
-width: 710px;
+width: 100%; /* Changed 4.20.12 */
 margin-left: auto;
 margin-right: auto;
 }
