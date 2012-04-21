@@ -1,0 +1,334 @@
+.container {
+	width: 100%; /* Changed 4.20.12 */
+}
+
+body {
+	background: #000;
+}
+
+header {
+	padding-top: 20px;
+}
+
+header img {
+	padding: lem;
+	background: #00ff00;
+}
+
+section {
+	margin-top: lem;
+	font-size: 120%;
+	padding: 20px;
+	background: #bbffbb;
+	height: 100%;
+}
+
+section h1 {
+	font-size: 200%;
+}
+
+/* Links */
+
+a {
+	color: #09c;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #069;
+	text-decoration: underline;
+}
+
+a:visited {
+	color: #069;
+}
+
+/* Navigation */
+
+nav {
+	background-color: white;
+	padding: 0 0.7em;
+	white-space: nowrap;
+}
+
+nav ul {
+	margin: 0;
+	padding: 0;
+}
+
+nav ul li {
+	list-style-type: none;
+	display: block;
+	padding: 0.2em 0;
+}
+
+nav ul li a {
+	padding: 0 5px;
+	font-weight: bold;
+}
+
+nav ul li a:visited {
+	color: #09c;
+}
+
+nav ul li a:hover {
+	text-decoration: underline;
+}
+
+/* Sign-up button */
+
+a.signup_button {
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	text-align: center;
+	width: 190px;
+	color: #fff;
+	background: #006400;
+	font-size: 150%;
+	font-weight: bold;
+	padding: 20px;
+}
+
+/* Round Corners */
+
+.round {
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+}
+
+/* footer */
+
+footer
+{
+text-align: center;
+margin-top: 10px;
+width: 100%; /* Changed 4.20.12 */
+margin-left: auto;
+margin-right: auto;
+}
+
+footer nav {
+	float: none;
+}
+
+/* User Show page */
+
+table.profile {
+	width: 100%;
+	margin-bottom: 0;
+}
+
+td.main {
+	width: 70%;
+	padding: lem;
+}
+
+td.sidebar {
+	width: 30%;
+	padding: lem;
+	vertical-align: top;
+	background: #ffc;
+}
+
+.profile img.gravatar {
+	border: 1px solid #999;
+	margin-bottom: -15px;
+}
+
+div.field, div.actions {
+	margin-bottom: 10px;
+}
+	
+	
+	/* errors */
+	
+.field_with_errors {
+	margin-top: 10px;
+	padding: 2px;
+	background-color: red;
+	display: table;
+}
+
+.field_with_errors label {
+	color: #fff;	
+}
+
+#error_explanation {
+	width: 400px;
+	border: 2px solid red;
+	padding: 7px;
+	padding-bottom: 12px;
+	margin-bottom: 20px;
+	background-color: #f0f0f0;
+}
+
+#error_explanation p{
+	color: #333;
+	margin-bottom: 0;
+	padding: 5px;
+}
+
+#error_explanation ul li {
+	font-size: 12px;
+	list-style: square;
+}
+
+body
+{
+	overflow: hidden;
+	background-image: url(../img/bg.png);
+}
+
+.slider
+{
+	position: absolute;
+	top: 42px;
+	background-image: url(../img/stripe.png), -webkit-gradient(linear, left top, left bottom, color-stop(0.0, #000), color-stop(0.5, #aaa), color-stop(1.0, #000));
+	background-image: url(../img/stripe.png), -moz-linear-gradient(left bottom, #000 0%, #aaa 50%, #000 100%);
+	border: 1px inset #777;
+}
+
+.slider .pointer
+{
+	background-image: -webkit-gradient(linear, left top, right bottom, color-stop(0.0, rgba(50,50,50,.7)), color-stop(0.5, #777), color-stop(1.0, rgba(50,50,50,.7)));
+	background-image: -moz-linear-gradient(-45deg, rgba(50,50,50,.7) 0%, #777  50%, rgba(50,50,50,.7) 100%);
+	width: 32px;
+	height: 20px;
+	border-radius: 5px;
+	margin-left: -4px;
+	border: 1px outset #777;
+}
+
+#pitchWheel
+{
+	left: 5px;
+}
+
+#modWheel
+{
+	left: 40px;
+}
+
+#keyboard
+{
+	position: absolute;
+	left: 50px;
+	bottom: 42px;
+	width: 90%;
+	width: calc(90% - 100px);
+	width: -moz-calc(90% - 100px);
+	height: 152px;
+	overflow: hidden;
+	border: 1px inset #777;
+	background: #fff;
+}
+
+#keycontainer
+{
+	position: absolute;
+	bottom: 0px;
+	height: 152px;
+}
+
+#keycontainer, div.key
+{
+	transition: all 0.5s ease-in-out;
+	-webkit-transition: all 0.5s ease-in-out;
+	-moz-transition: all 0.5s ease-in-out;
+	-o-transition: all 0.5s ease-in-out;
+}
+
+applet
+{
+	position: absolute;
+	left: -1px;
+	bottom: 0px;
+	z-index: -100;
+}
+
+#settingButton, #settings
+{
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: auto;
+	height: 40px;
+	background-color: rgba(0,0,0,0.7);
+	font-weight: bold;
+	font-size: 120%;
+	color: #fff;
+	border-color: black;
+	z-index: 3;
+}
+
+#settingButton, #settings, div.key, .slider
+{
+	box-shadow: 0px 0px 15px #000 inset;
+	-webkit-box-shadow: 0px 0px 15px #000 inset;
+	-moz-box-shadow: 0px 0px 15px #000 inset;
+	-o-box-shadow: 0px 0px 15px #000 inset;
+}
+
+#settings
+{
+	width: 100%;
+	height: 100%;
+	z-index: 4;
+	padding: 10px;
+}
+
+.noAnimation #keycontainer, .noAnimation .key
+{
+	transition: none;
+	-webkit-transition: none;
+	-moz-transition: none;
+	-o-transition: none;
+}
+.noShadows .key
+{
+	box-shadow: none;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	-o-box-shadow: none;
+}
+
+div.key
+{
+	width: 40px;
+	height: 150px;
+	border: 1px solid #666;
+	float: left;
+	margin: 0px;
+	position: relative;
+	cursor: pointer;
+}
+
+.key.hover
+{
+	background-color: #aae;
+}
+
+.key.pressed
+{
+	background-color: #aaa;
+}
+
+div.white
+{
+	background-color: #fff;
+	margin-left: -1px;
+}
+
+div.black
+{
+	width: 26px;
+	background-color: #444;
+	margin-left: -14px;
+	height: 75px;
+	margin-right: -14px;
+	z-index: 1;
+}
+
+

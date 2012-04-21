@@ -4,4 +4,4 @@
 # If you change this key, all old signed cookies will become invalid!
 # Make sure the secret is at least 30 characters and all random,
 # no regular words or you'll be exposed to dictionary attacks.
-BroyhillCrestVa::Application.config.secret_token = '8ccfe868ba707b272a50eaecf24af5ecd992036830cc42bc99d33529d2103a3a664161b5a6af2fc25e63902a934b0451d13f6f027452065b40edb777b25dde5b'
+SampleApp::Application.config.secret_token = 'f305ee8613edfab7c145cbf5a1a91185e7181ba682f5523da7e16460e802278aa46d7a7eb863dcc813b7cb5f87cda5b73658d94ca5242a6e3a7e1bfbd902caf3'

@@ -1,14 +1,39 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>BroyhillCrestVa</title>
-  <%= stylesheet_link_tag :all %>
-  <%= javascript_include_tag :defaults %>
+  <title><%= title %></title>
   <%= csrf_meta_tag %>
+  <%= render 'layouts/stylesheets' %>
 </head>
 <body>
+	<div class="container">
+		<table border="1">
+			<tr>
+				<td style="WIDTH:20%">
+					<% logo = image_tag("bcca_shield_inv.png", :alt => "DTPD", :class => "round") %>
+				<%= link_to logo, root_path %>
+				</td>
+				<td><% logo = image_tag("broyhill_logo.png", :alt => "DTPD", :class => "round") %>
+				<%= link_to logo, root_path %></td>
+			</tr>
+			<tr>
+				<td style="WIDTH:20%">
+					<section class="round"><%= render 'layouts/header' %></section></td>
+				<td>
+					<section class="round">
+						<% flash.each do |key, value| %>
+							<div class="flash <%= key %>">
+								<%= value %>
+							</div>
+						<% end %>
+						<%= yield %>
+					</section>
+				</td>
+			</tr>
+		</table>
 
-<%= yield %>
-
+		<%= render 'layouts/footer' %>
+		<%= debug(params) if Rails.env.development? %>
+	</div>
 </body>
 </html>
