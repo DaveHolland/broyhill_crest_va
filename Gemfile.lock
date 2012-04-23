@@ -42,7 +42,7 @@ GEM
       i18n (>= 0.4.0)
       mime-types (~> 1.16)
       treetop (~> 1.4.8)
-    mime-types (1.17.2)
+    mime-types (1.18)
     polyglot (0.3.3)
     rack (1.2.5)
     rack-mount (0.6.14)
@@ -80,7 +80,7 @@ GEM
     treetop (1.4.10)
       polyglot
       polyglot (>= 0.3.1)
-    tzinfo (0.3.31)
+    tzinfo (0.3.33)
 
 PLATFORMS
   x86-mingw32
@@ -90,4 +90,4 @@ DEPENDENCIES
   gravatar_image_tag (= 0.1.0)
   rails (= 3.0.1)
   rspec-rails (= 2.0.1)
-  sqlite3-ruby
+  sqlite3-ruby (= 1.2.5)
